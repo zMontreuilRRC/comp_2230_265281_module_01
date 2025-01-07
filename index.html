@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- html: root of the document -->
+<html lang="en">
+<!-- head: contains metadata about the document -->
+<head>
+    <!-- meta and title elements are CHILDREN of <head> -->
+        <!-- head element is the PARENT of the meta and title eles -->
+         <!-- "hierarchical" structure -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winnipeg Local Guide</title>
+</head>
+<!-- body: parent of all visible elements -->
+<body>
+<!-- CSS and JS use the tags to manipulate the page; they need these tags to know where different components of the page are -->
+    <!-- pages can have one header; it usually contains the title -->
+    <header>
+        <!-- "title" -->
+        <h1>A Local's Guide to Winnipeg</h1>
+        <p>The place at the literal centre of the country, mostly.</p>
+    </header>
+    <main>
+        <!-- "body paragraphs" -->
+        <!-- main: the actual content of the page. The Header should tell us what this page is about; the Main should contain that content -->
+            <!-- headers should go in descending order (h1, h2, h3, etc.) -->
+        <section>
+            <h2>Main Attractions</h2>
+            <p>
+                Winnipeg is known for its vibrant arts scene, rich history, and cultural diversity. Here are some of the city's top attractions: 
+            </p>
+            <!-- ul: Unordered List / ol: ordered List-->
+            <!-- Lists may ONLY have LI children -->
+            <ul>
+                <li>
+                    The Forks: a historic site
+                </li>
+                <li>
+                    Manitoba Museum: also historic but not as much shopping
+                </li>
+                <li>
+                    The Leaf: there is a butterfly garden near there, I think
+                </li>
+                <li>
+                    Assinniboine Park: Really nice in Fall
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Dining in Winnipeg</h2>
+            <!-- html table -->
+            <table>
+                <thead>
+                    <!-- tr: one row -->
+                    <tr>
+                        <!-- th: table head column -->
+                        <th>Restaurant Name</th>
+                        <th>Cuisine</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sous Sol</td>
+                        <td>"Hidden"</td>
+                        <td>Osborne</td>
+                    </tr>
+                    <tr>
+                        <td>In Ferno's Bistro</td>
+                        <td>French</td>
+                        <td>St. Boniface</td>
+                    </tr>
+                    <tr>
+                        <td>Dancing Noodle</td>
+                        <td>Chinese</td>
+                        <td>Fort Gary</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>
+                    <!-- a: anchors (links)-->
+                     <!-- "href=" attribute: url to resource -->
+                    <a href="https://www.winnipegfolkfestival.ca/">Folk Festival</a>: A collection of multicultural music and cuisine
+                </li>
+                <li>
+                    <a href="https://www.winnipegfringe.com/">Winnipeg Fringe</a>: theatrical performances-- beware one-person shows
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#169; 2025 Winnipeg Guide, All Rights Reserved, For Real</p>
+    </footer>
+</body>
+</html>
+
