@@ -19,11 +19,20 @@
         <h1>A Local's Guide to Winnipeg</h1>
         <p>The place at the literal centre of the country, mostly.</p>
     </header>
+    <nav>
+        <ul>
+            <!-- "#" hrefs refer to element ids on the page -->
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#events">Events</a></li>
+        </ul>
+    </nav>
     <main>
         <!-- "body paragraphs" -->
         <!-- main: the actual content of the page. The Header should tell us what this page is about; the Main should contain that content -->
             <!-- headers should go in descending order (h1, h2, h3, etc.) -->
-        <section>
+        <!-- All elements can have IDs; they can only have one and it should be unique -->
+        <section id="attractions">
             <h2>Main Attractions</h2>
             <p>
                 Winnipeg is known for its vibrant arts scene, rich history, and cultural diversity. Here are some of the city's top attractions: 
@@ -46,7 +55,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="dining">
             <h2>Dining in Winnipeg</h2>
             <!-- html table -->
             <table>
@@ -78,7 +87,7 @@
                 </tbody>
             </table>
         </section>
-        <section>
+        <section id="events">
             <h2>Upcoming Events</h2>
             <ul>
                 <li>
@@ -98,4 +107,3 @@
     </footer>
 </body>
 </html>
-
