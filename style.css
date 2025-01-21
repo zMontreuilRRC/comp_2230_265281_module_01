@@ -1,0 +1,107 @@
+/* Global styles */
+/* tag name applied AND all of its children*/
+body {
+    /* rule syntax: {name: value} */
+    /* defines a font and its fallbacks if that font is not available */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* adjust the space of text between lines, the number being relative to the size of the line text*/
+    line-height: 1.5;
+
+    /* colour of the text */
+    color: #333;
+
+    /* colour of the element background */
+    background-color: #f4f4f4;
+
+    /* allows font to be resized from browser default */
+    font-size: 100%;
+
+    /* box model */
+    /* margin: space between this element and other elements */
+    margin: 0px;
+
+    /* padding: space between element content and its own border */
+    padding: 0px;
+}
+
+header {
+    /* 'background-color' sets the background color for the header section. */
+    background-color: #222;
+
+    /* The 'color' property here makes the text within the header white. */
+    color: #fff;
+
+    /* 'text-align' specifies the horizontal alignment of text. 'center'
+    means the text will be centered within its container. */
+    text-align: center;
+
+    /* 'padding' adds space inside an element. '1rem 0' adds space to the
+    top and bottom (1rem) and no space to the left and right (0). */
+    padding: 1rem 0;
+}
+
+header h1 {
+    /* 'margin' controls the space outside an element. Setting it to '0'
+    ensures the heading has no extra space around it. */
+    margin: 0;
+}
+
+/* Any rules applied directly to the Anchor will override those applied to Body, because child rules are more specific than inherited Parent rules */
+a {
+
+    /* This overrides the parent's rule because child rules are always more specific */
+    color: darkblue;
+}
+
+/* Hover is a psuedo-class for elements when the mouse is over them */
+/* psuedo-classes add greater specificity to a ruleset */
+a:hover {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #333;
+
+    /* space between content and the border */
+    /* EM is a typographical measurement that refers to the size of the font already provided */
+    /* 0.5 em = default font (16px) x 0.5 = (8px) */
+    /* REM = "root" em (the page's own default font size) */
+    /* EM = parent em (the font size of the parent) */
+    padding: 0.5rem 0;
+}
+
+/* adding elements in order specifies inheritance: "all uls that are the children of navs" */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* all LI elements contained in NAV elements */
+nav li {
+    /* by default these are "block" and take up all the width of their own line.
+    Inline elements only take up their content/padding/etc. and do not start a new line
+    */
+    display: inline;
+
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+}
+
+/* class prefix: "." */
+/* apply to all elements with the "main-content" class */
+.main-content {
+    /* "auto" will cause an element to create space until it is centred */
+    margin: 2rem auto;
+
+    /* maximum width of content: 80% of parent */
+    /* using percentages makes our element RESPONSIVE */
+    /* avoid using absolute values (like pixels) unless its for something that should never change, like an image */
+    width: 80%;
+}
+

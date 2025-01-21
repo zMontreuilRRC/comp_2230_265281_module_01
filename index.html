@@ -8,6 +8,7 @@
          <!-- "hierarchical" structure -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Winnipeg Local Guide</title>
 </head>
 <!-- body: parent of all visible elements -->
@@ -32,8 +33,8 @@
         <!-- main: the actual content of the page. The Header should tell us what this page is about; the Main should contain that content -->
             <!-- headers should go in descending order (h1, h2, h3, etc.) -->
         <!-- All elements can have IDs; they can only have one and it should be unique -->
-        <section id="attractions">
-            <h2>Main Attractions</h2>
+        <section id="attractions" class="main-content">
+            <h2>Main Attractions</h3>
             <p>
                 Winnipeg is known for its vibrant arts scene, rich history, and cultural diversity. Here are some of the city's top attractions: 
             </p>
@@ -54,8 +55,7 @@
                 </li>
             </ul>
         </section>
-
-        <section id="dining">
+        <section id="dining" class="main-content">
             <h2>Dining in Winnipeg</h2>
             <!-- html table -->
             <table>
@@ -87,7 +87,7 @@
                 </tbody>
             </table>
         </section>
-        <section id="events">
+        <section id="events" class="main-content">
             <h2>Upcoming Events</h2>
             <ul>
                 <li>
