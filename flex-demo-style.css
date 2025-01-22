@@ -1,0 +1,17 @@
+/* TWO general element display types: inline and block */
+/* block: take up their own line with full width of their container */
+/* inline: do not take up their own line, take up the space of their content */
+
+/* display:flex turns all children into "flex-children" */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div.box {
+    padding: 2em;
+    border: 3px solid red;
+    margin: 1em;
+    width: 10%;
+}

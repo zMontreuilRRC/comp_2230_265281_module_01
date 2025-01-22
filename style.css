@@ -69,6 +69,13 @@ nav {
     /* REM = "root" em (the page's own default font size) */
     /* EM = parent em (the font size of the parent) */
     padding: 0.5rem 0;
+
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: red; */
+
+    border: 3px solid blue;
+    border-bottom: 12px solid red;
 }
 
 /* adding elements in order specifies inheritance: "all uls that are the children of navs" */
@@ -105,3 +112,26 @@ nav a {
     width: 80%;
 }
 
+
+
+body section p span {
+    color: blue;
+}
+
+/* class selectors are more specific than type selectors */
+.green-text {
+    color: green;
+}
+
+span.green-text {
+    color: lightseagreen;
+}
+
+/* ID Selectors are the most specific selector */
+#red-text {
+    color: red;
+}
+
+h2:hover {
+    font-size: 5em;
+}
